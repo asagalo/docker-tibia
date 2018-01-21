@@ -1,0 +1,11 @@
+version: "3.2"
+
+services:
+  tibia:
+    build: .
+    environment:
+      - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./conf:/home/tibia/conf
+      - ./minimap:/home/tibia/minimap
